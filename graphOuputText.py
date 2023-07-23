@@ -50,7 +50,12 @@ plt.ylabel('Y')
 plt.legend()
 plt.title('Power Law Fit')
 plt.grid(True)
-plt.show()
+# plt.show()
+
+plt.savefig('power_law_fit.png')
+
+# Optionally, you can also specify the dpi (dots per inch) for better resolution
+# plt.savefig('power_law_fit.png', dpi=300)
 
 # The parameters 'params' will contain the fitted values of 'a' and 'b'.
 fitted_a, fitted_b = params
